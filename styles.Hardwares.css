@@ -1,0 +1,208 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333333;
+    color: #ff4000;
+}
+
+/* Container para logo e título */
+.logo-container {
+    display: flex; /* Usando flexbox */
+    align-items: center; /* Alinha verticalmente os itens */
+    justify-content: flex-start; /* Alinha os itens à esquerda (padrão) */
+}
+
+/* Estilo para a logo */
+.logo-img {
+    max-width: 150px; /* Ajusta o tamanho da logo */
+    height: 70px; /* Mantém a proporção da imagem */
+    margin-right: 10px; /* Dá um pequeno espaço à direita da logo */
+}
+
+/* Estilo para o título */
+h1 {
+    font-size: 2rem; /* Tamanho do texto */
+    color: #ffffff; /* Cor do texto */
+    margin: 0; /* Remove margens padrão */
+
+}
+
+/* Cabeçalho */
+header {
+    background-color: #000dffb8;
+    color: rgb(255, 51, 0);
+    padding: 8px;
+    text-align: center;
+}
+
+/* Estilo para o contêiner da barra de busca */
+.search-bar {
+    display: flex; /* Alinha os itens em linha */
+    align-items: center; /* Alinha verticalmente os itens */
+    margin-left: 1050px; /* Espaçamento da esquerda */
+}
+
+/* Estilo para o campo de busca */
+.search-input {
+    width: 350px; /* Largura do campo de busca */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda do campo de busca */
+    border-radius: 20px; /* Bordas arredondadas */
+    font-size: 15px; /* Tamanho da fonte */
+    margin-right: 10px; /* Espaçamento à direita entre o campo e o botão */
+}
+
+/* Estilo para o botão de busca */
+.search-button {
+    padding: 10px 15px; /* Tamanho do botão */
+    background-color: #0400fff5; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mãozinha */
+    font-size: 16px; /* Tamanho da fonte do botão */
+}
+
+/* Efeito de hover no botão */
+.search-button:hover {
+    background-color: #ff4500; /* Cor do botão quando passar o mouse */
+}
+
+
+header nav {
+    margin-top: 1px;
+}
+
+header nav a {
+    color: #e65729;
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Botões */
+.btn {
+    background-color: #e65729;
+    color: rgb(255, 255, 255);
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #e65729;
+}
+
+/* Seções */
+.intro {
+    text-align: center;
+    margin-top: 50px;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.produtos {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.produtos h2 {
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+.card p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+/* Formulário de Contato */
+.contato {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.contato form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contato input, .contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contato button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contato button:hover {
+    background-color: #e55b4f;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
